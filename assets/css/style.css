@@ -184,7 +184,24 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url("/assets/img/slider/chicago.jpg") top center / cover no-repeat;
+}
+
+#slider .slider-chicago {
+    background: url("https://mmn0208.github.io/W3_Band/assets/img/slider/chicago.jpg") top center / cover no-repeat;
+}
+
+#slider .slider-ny {
+    background: url("https://mmn0208.github.io/W3_Band/assets/img/slider/ny.jpg") top center / cover no-repeat;
+    display: none;
+}
+
+#slider .slider-la {
+    background: url("https://mmn0208.github.io/W3_Band/assets/img/slider/la.jpg") top center / cover no-repeat;
+    display: none;
+}
+
+#slider .slider-content {
+    animation: sliderFadeIn ease .5s;
 }
 
 #slider .text-content {
@@ -489,6 +506,17 @@ html {
 
 .modal .modal-footer a {
     color: #2196F3
+}
+
+@keyframes sliderFadeIn {
+    from {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @keyframes modalFadeIn {
