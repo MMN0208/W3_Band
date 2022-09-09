@@ -181,9 +181,7 @@ html {
 }
 
 #slider {
-    position: relative;
-    margin-top: 46px;
-    padding-top: 50%;
+
 }
 
 #slider .slider-chicago {
@@ -201,6 +199,9 @@ html {
 }
 
 #slider .slider-content {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
     animation: sliderFadeIn ease .5s;
 }
 
