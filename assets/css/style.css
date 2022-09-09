@@ -190,12 +190,10 @@ html {
 
 #slider .slider-ny {
     background: url("https://mmn0208.github.io/W3_Band/assets/img/slider/ny.jpg") top center / cover no-repeat;
-    display: none;
 }
 
 #slider .slider-la {
     background: url("https://mmn0208.github.io/W3_Band/assets/img/slider/la.jpg") top center / cover no-repeat;
-    display: none;
 }
 
 #slider .slider-content {
