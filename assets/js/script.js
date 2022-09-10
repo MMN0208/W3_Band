@@ -29,9 +29,8 @@ function showHideMenu() {
 menuBtn.onclick = showHideMenu;
 
 var viewWidth = window.innerWidth;
-console.log(viewWidth);
 
-if(viewWidth <= 740) {
+if(viewWidth <= 739) {
     var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
     var subMenuIcon = document.querySelector('#nav li a[href*="#"] i');
     var subNav = document.getElementById('js-subnav');
