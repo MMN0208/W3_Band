@@ -28,29 +28,30 @@ function showHideMenu() {
 
 menuBtn.onclick = showHideMenu;
 
-var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-var subMenuIcon = document.querySelector('#nav li a[href*="#"] i');
-var subNav = document.getElementById('js-subnav');
-var subMenuDisplayed = subNav.style.display === "block";
-console.log(subMenuDisplayed);
+var viewWidth = window.innerWidth;
+console.log(viewWidth);
 
-for(var menuItem of menuItems) {
-    menuItem.onclick = function(event) {
-        var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
-        if(!isParentMenu) {
-            header.style.height = null;
-        } else if(!subMenuDisplayed){
-            event.preventDefault();
-            subMenuIcon.classList.remove('ti-angle-down');
-            subMenuIcon.classList.add('ti-angle-up');
-            subNav.style.display = 'block';
-            subMenuDisplayed = true;
-        } else {
-            event.preventDefault();
-            subMenuIcon.classList.remove('ti-angle-up');
-            subMenuIcon.classList.add('ti-angle-down');
-            subNav.style.display = null;
-            subMenuDisplayed = false;
+if(viewWidth <= 740) {
+    var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+    var subMenuIcon = document.querySelector('#nav li a[href*="#"] i');
+    var subNav = document.getElementById('js-subnav');
+    for(var menuItem of menuItems) {
+        menuItem.onclick = function(event) {
+            var isParentMenu = this.nextElementSibling.classList.contains('subnav');
+            var subMenuDisplayed = subNav.style.display === 'block';
+            if(!isParentMenu) {
+                header.style.height = null;
+            } else if(!subMenuDisplayed){
+                event.preventDefault();
+                subMenuIcon.classList.remove('ti-angle-down');
+                subMenuIcon.classList.add('ti-angle-up');
+                subNav.style.display = 'block';
+            } else {
+                event.preventDefault();
+                subMenuIcon.classList.remove('ti-angle-up');
+                subMenuIcon.classList.add('ti-angle-down');
+                subNav.style.display = 'none';
+            }
         }
     }
 }
