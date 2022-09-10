@@ -200,7 +200,7 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    animation: sliderFadeIn ease .5s;
+    animation: sliderFadeInOut ease 5s;
 }
 
 #slider .text-content {
@@ -507,17 +507,26 @@ html {
     color: #2196F3
 }
 
-@keyframes sliderFadeIn {
-    from {
+/* Animation */
+
+@keyframes sliderFadeInOut {
+    0% {
         transform: translateX(80%);
         opacity: 0;
     }
-    to {
+    15% {
         transform: translateX(0);
         opacity: 1;
     }
+    85% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-80%);
+        opacity: 0;
+    }
 }
-
 @keyframes modalFadeIn {
     from {
         transform: translateY(-80%);
