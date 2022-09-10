@@ -29,14 +29,28 @@ function showHideMenu() {
 menuBtn.onclick = showHideMenu;
 
 var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+var subMenuIcon = document.querySelector('#nav li a[href*="#"] i');
+var subNav = document.getElementById('js-subnav');
+var subMenuDisplayed = subNav.style.display === "block";
+console.log(subMenuDisplayed);
 
 for(var menuItem of menuItems) {
     menuItem.onclick = function(event) {
         var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
         if(!isParentMenu) {
             header.style.height = null;
+        } else if(!subMenuDisplayed){
+            event.preventDefault();
+            subMenuIcon.classList.remove('ti-angle-down');
+            subMenuIcon.classList.add('ti-angle-up');
+            subNav.style.display = 'block';
+            subMenuDisplayed = true;
         } else {
             event.preventDefault();
+            subMenuIcon.classList.remove('ti-angle-up');
+            subMenuIcon.classList.add('ti-angle-down');
+            subNav.style.display = null;
+            subMenuDisplayed = false;
         }
     }
 }
