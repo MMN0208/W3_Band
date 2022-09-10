@@ -453,7 +453,7 @@ html {
     position: relative;
     background-color: #fff;
     width: 900px;
-    max-width: calc(100% - 32px);
+    max-width: calc(100% - 80px);
     min-height: 200px;
     animation: modalFadeIn ease .5s;
 }

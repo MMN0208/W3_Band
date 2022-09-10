@@ -66,4 +66,12 @@
     .contact-form .form-control {
         padding: 16px;
     }
+
+    .modal .modal-container {
+        width: 80%;
+    }
+
+    .modal .modal-input {
+        padding: 16px;
+    }
 }
