@@ -1,3 +1,49 @@
+/* Tablet & mobile */
+@media (max-width: 1023px) {
+    .btn {
+        padding: 16px 16px;
+    }
+
+    #nav .subnav a {
+        padding: 5px 12px;
+    }
+
+    .contact-info {
+        line-height: 2;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+    }
+
+    #footer .socials-list {
+        font-size: 40px;
+    }
+
+    #footer .socials-list a {
+        color:rgba(0, 0, 0, 0.6);
+        text-decoration: none;
+        margin: 0 8px;
+    }
+
+    #footer .copyright a {
+        color:rgba(0, 0, 0, 0.6);
+        padding: 12px 0;
+        display: inline-block;
+    }
+
+    .modal .modal-input {
+        padding: 15px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+
+/* Mobile */
 @media (max-width: 739px) {
     .s-full-width,
     .s-col-full {
@@ -6,10 +52,6 @@
 
     .s-mt-8 {
         margin-top: 8px !important;
-    }
-
-    .btn {
-        padding: 17px 16px;
     }
 
     #header {
@@ -64,18 +106,10 @@
     }
 
     .contact-form {
-        margin-top: 16px;
-    }
-
-    .contact-form .form-control {
-        padding: 16px;
+        margin-top: 32px;
     }
 
     .modal .modal-container {
         width: 80%;
-    }
-
-    .modal .modal-input {
-        padding: 16px;
     }
 }
