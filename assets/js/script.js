@@ -28,15 +28,16 @@ function showHideMenu() {
 
 menuBtn.onclick = showHideMenu;
 
-var viewWidth = window.innerWidth;
+var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+var subMenuIcon = document.querySelector('#nav li a[href*="#"] i');
+var subNav = document.getElementById('js-subnav');
 
-if(viewWidth <= 739) {
-    var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-    var subMenuIcon = document.querySelector('#nav li a[href*="#"] i');
-    var subNav = document.getElementById('js-subnav');
-    for(var menuItem of menuItems) {
-        menuItem.onclick = function(event) {
-            var isParentMenu = this.nextElementSibling.classList.contains('subnav');
+for(var menuItem of menuItems) {
+    menuItem.onclick = function(event) {
+        var isMobile = window.innerWidth <= 739;
+        console.log(isMobile);
+        if(isMobile) {
+            var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
             var subMenuDisplayed = subNav.style.display === 'block';
             if(!isParentMenu) {
                 header.style.height = null;
