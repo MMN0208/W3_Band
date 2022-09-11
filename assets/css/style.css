@@ -344,6 +344,7 @@ html {
 }
 
 .tickets-list li {
+    height: 40px;
     color: #757575;
     font-size: 15px;
     padding: 11px 16px;
