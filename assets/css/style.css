@@ -341,9 +341,6 @@ html {
     background-color: #fff;
     margin-top: 40px;
     list-style: none;
-    border-top: 1px solid #ddd;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
 }
 
 .tickets-list li {
@@ -352,6 +349,10 @@ html {
     font-size: 15px;
     padding: 11px 16px;
     border-bottom: 1px solid #ddd;
+}
+
+.tickets-list li:last-child {
+    border-bottom: none !important;
 }
 
 .tickets-list .sold-out {
