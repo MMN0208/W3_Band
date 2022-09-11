@@ -50,7 +50,7 @@ for(var menuItem of menuItems) {
                 event.preventDefault();
                 subMenuIcon.classList.remove('ti-angle-up');
                 subMenuIcon.classList.add('ti-angle-down');
-                subNav.style.display = 'none';
+                subNav.style.display = null;
             }
         }
     }
