@@ -89,11 +89,7 @@ html {
     margin-top: 32px;
 }
 
-/* Main */
-
-#main {
-
-}
+/* Hover effects*/
 
 @media (hover: hover) {
     .btn:hover {
@@ -148,6 +144,12 @@ html {
         cursor: pointer;
         opacity: 0.9;
     }
+}
+
+/* Main */
+
+#main {
+
 }
 
 #header {
