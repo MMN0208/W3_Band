@@ -2,6 +2,7 @@
 @media (max-width: 1023px) {
     .btn {
         padding: 16px 16px;
+        border-radius: none;
     }
 
     #nav .subnav a {
