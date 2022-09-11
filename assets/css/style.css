@@ -341,6 +341,9 @@ html {
     background-color: #fff;
     margin-top: 40px;
     list-style: none;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
 
 .tickets-list li {
