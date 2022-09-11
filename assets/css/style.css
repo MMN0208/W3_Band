@@ -209,15 +209,15 @@ html {
 }
 
 #slider .slider-chicago {
-    background: url("https://mmn0208.github.io/W3_Band/assets/img/slider/chicago.jpg") top center / cover no-repeat;
+    background: url("../img/slider/chicago.jpg") top center / cover no-repeat;
 }
 
 #slider .slider-ny {
-    background: url("https://mmn0208.github.io/W3_Band/assets/img/slider/ny.jpg") top center / cover no-repeat;
+    background: url("../img/slider/ny.jpg") top center / cover no-repeat;
 }
 
 #slider .slider-la {
-    background: url("https://mmn0208.github.io/W3_Band/assets/img/slider/la.jpg") top center / cover no-repeat;
+    background: url("../img/slider/la.jpg") top center / cover no-repeat;
 }
 
 #slider .slider-content {
@@ -241,6 +241,11 @@ html {
 #slider .text-heading {
     font-weight: 500;
     font-size: 24px;
+}
+
+#slider .text-heading,
+#slider .text-description {
+    text-shadow: 0 0 4px #000;
 }
 
 #slider .text-description {
