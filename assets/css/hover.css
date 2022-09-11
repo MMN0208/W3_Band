@@ -1,0 +1,56 @@
+/* Hover effects*/
+
+@media (hover: hover) {
+    .btn:hover {
+        cursor: pointer;
+        color: #000;
+        background-color: #ccc;
+    }
+
+    #nav li:hover .subnav {
+        display: block;
+    }
+
+    #nav > li:hover > a,
+    #nav .subnav li:hover a {
+        color: #000;
+        background-color: #ccc;
+    }
+
+    #header .search-btn:hover {
+        cursor: pointer;
+        background-color: #f44336;
+    }
+    
+    #header .mobile-menu-btn:hover {
+        background-color: #ccc;
+    }
+    
+    #header .mobile-menu-btn:hover .menu-icon {
+        color: #000;
+    }
+
+    .place-img:hover {
+        opacity: 0.6;
+    }
+
+    .contact-info a:hover {
+        opacity: 1;
+    }
+
+    #footer .socials-list a:hover {
+        cursor: pointer;
+        opacity: 0.4;
+    }
+
+    .modal .modal-close:hover {
+        cursor: pointer;
+        color: #000;
+        background-color: #ccc;
+    }
+
+    .modal #buy-tickets:hover {
+        cursor: pointer;
+        opacity: 0.9;
+    }
+}
