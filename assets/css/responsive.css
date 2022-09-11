@@ -36,6 +36,10 @@
         display: inline-block;
     }
 
+    #nav li:hover .subnav {
+        display: none;
+    }
+
     #nav li a {
         padding: 2px 24px;
     }
