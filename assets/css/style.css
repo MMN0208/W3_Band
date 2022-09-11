@@ -41,6 +41,7 @@ html {
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
