@@ -44,12 +44,6 @@ html {
     -webkit-appearance: none;
 }
 
-.btn:hover {
-    cursor: pointer;
-    color: #000;
-    background-color: #ccc;
-}
-
 .pull-right {
     float: right !important;
 }
@@ -101,6 +95,61 @@ html {
 
 }
 
+@media (hover: hover) {
+    .btn:hover {
+        cursor: pointer;
+        color: #000;
+        background-color: #ccc;
+    }
+
+    #nav li:hover .subnav {
+        display: block;
+    }
+
+    #nav > li:hover > a,
+    #nav .subnav li:hover a {
+        color: #000;
+        background-color: #ccc;
+    }
+
+    #header .search-btn:hover {
+        cursor: pointer;
+        background-color: #f44336;
+    }
+    
+    #header .mobile-menu-btn:hover {
+        background-color: #ccc;
+    }
+    
+    #header .mobile-menu-btn:hover .menu-icon {
+        color: #000;
+    }
+
+    .place-img:hover {
+        opacity: 0.6;
+    }
+
+    .contact-info a:hover {
+        opacity: 1;
+    }
+
+    #footer .socials-list a:hover {
+        cursor: pointer;
+        opacity: 0.4;
+    }
+
+    .modal .modal-close:hover {
+        cursor: pointer;
+        color: #000;
+        background-color: #ccc;
+    }
+
+    .modal #buy-tickets:hover {
+        cursor: pointer;
+        opacity: 0.9;
+    }
+}
+
 #header {
     position: fixed;
     top: 0;
@@ -132,21 +181,11 @@ html {
     text-transform: uppercase;
 }
 
-#nav li:hover .subnav {
-    display: block;
-}
-
 #nav li a {
     text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
     display: block;
-}
-
-#nav > li:hover > a,
-#nav .subnav li:hover a {
-    color: #000;
-    background-color: #ccc;
 }
 
 #nav .nav-arrow-down {
@@ -181,19 +220,6 @@ html {
 #header .search-btn {
     float: right;
     padding: 0 21px;
-}
-
-#header .search-btn:hover {
-    cursor: pointer;
-    background-color: #f44336;
-}
-
-#header .mobile-menu-btn:hover {
-    background-color: #ccc;
-}
-
-#header .mobile-menu-btn:hover .menu-icon {
-    color: #000;
 }
 
 #header .menu-icon,
@@ -350,10 +376,6 @@ html {
     display: block;
 }
 
-.place-img:hover {
-    opacity: 0.6;
-}
-
 .place-body {
     background-color: #fff;
     padding: 16px;
@@ -398,10 +420,6 @@ html {
     opacity: 0.8;
 }
 
-.contact-info a:hover {
-    opacity: 1;
-}
-
 .contact-form {
 
 }
@@ -431,11 +449,6 @@ html {
 #footer .socials-list a {
     color:rgba(0, 0, 0, 0.6);
     text-decoration: none;
-}
-
-#footer .socials-list a:hover {
-    cursor: pointer;
-    opacity: 0.4;
 }
 
 #footer .copyright {
@@ -495,12 +508,6 @@ html {
     display: block;
 }
 
-.modal .modal-close:hover {
-    cursor: pointer;
-    color: #000;
-    background-color: #ccc;
-}
-
 .modal .modal-header-icon {
     margin-right: 12px;
 }
@@ -531,11 +538,6 @@ html {
     font-size: 15px;
     text-transform: uppercase;
     padding: 18px;
-}
-
-.modal #buy-tickets:hover {
-    cursor: pointer;
-    opacity: 0.9;
 }
 
 .modal .modal-footer {
