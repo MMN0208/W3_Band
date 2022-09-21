@@ -34,7 +34,7 @@ var subNav = document.getElementById('js-subnav');
 
 for(var menuItem of menuItems) {
     menuItem.onclick = function(event) {
-        var isMobile = window.innerWidth <= 739;
+        var isMobile = window.innerWidth <= 1023;
         console.log(isMobile);
         if(isMobile) {
             var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
